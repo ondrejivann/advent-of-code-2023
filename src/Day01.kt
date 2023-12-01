@@ -1,17 +1,15 @@
-fun main() {
-    fun part1(input: List<String>): Int {
-        return input.size
-    }
+import day01.Day01
 
-    fun part2(input: List<String>): Int {
-        return input.size
-    }
+fun main() {
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
-    check(part1(testInput) == 1)
+    val day01Test1 = Day01(readInput("Day01_part_1_test"))
+    check(day01Test1.getCalibration() == 142)
+    val day01Test2 = Day01(readInput("Day01_part_2_test"))
+    check(day01Test2.getSpelledOutCalibrationValue() == 281)
 
-    val input = readInput("Day01")
-    part1(input).println()
-    part2(input).println()
+    // print solution
+    val day01 = Day01(readInput("Day01"))
+    day01.getAnswer1().println()
+    day01.getAnswer2().println()
 }
