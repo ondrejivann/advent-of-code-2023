@@ -13,7 +13,7 @@ fun main() {
 
     // print solution
     val day05 = Day05(readInput("Day05"))
-//
+
     runBlocking {
         day05.getSeedsLocationNumber().println()
         day05.getSeedRangesLocationNumber().println()
